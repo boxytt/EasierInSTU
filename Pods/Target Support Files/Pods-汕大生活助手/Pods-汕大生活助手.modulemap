@@ -1,0 +1,6 @@
+framework module Pods_______ {
+  umbrella header "Pods-汕大生活助手-umbrella.h"
+
+  export *
+  module * { export * }
+}

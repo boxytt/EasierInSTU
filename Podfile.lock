@@ -1,0 +1,78 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Alamofire (4.0.1)
+  - AVOSCloud (3.6.1)
+  - AVOSCloudCrashReporting (3.6.1):
+    - AVOSCloud (= 3.6.1)
+    - AVOSCloudCrashReporting/_ARC (= 3.6.1)
+    - AVOSCloudCrashReporting/_NOARC (= 3.6.1)
+  - AVOSCloudCrashReporting/_ARC (3.6.1):
+    - AVOSCloud (= 3.6.1)
+    - AVOSCloudCrashReporting/_NOARC (= 3.6.1)
+  - AVOSCloudCrashReporting/_NOARC (3.6.1):
+    - AVOSCloud (= 3.6.1)
+  - AVOSCloudIM (3.6.1):
+    - AVOSCloud (= 3.6.1)
+    - AVOSCloudIM/_ARC (= 3.6.1)
+    - AVOSCloudIM/_NOARC (= 3.6.1)
+  - AVOSCloudIM/_ARC (3.6.1):
+    - AVOSCloud (= 3.6.1)
+    - AVOSCloudIM/_NOARC (= 3.6.1)
+  - AVOSCloudIM/_NOARC (3.6.1):
+    - AVOSCloud (= 3.6.1)
+  - JGProgressHUD (1.4)
+  - Kingfisher (3.2.1)
+  - LeanCloud (1.3.0):
+    - LeanCloud/Storage (= 1.3.0)
+  - LeanCloud/Storage (1.3.0):
+    - Alamofire (~> 4.0.1)
+  - LeanCloudFeedback (0.1.1):
+    - AVOSCloud
+  - RongCloudIMKit (2.7.3.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.3)
+  - AVOSCloud
+  - AVOSCloudCrashReporting
+  - AVOSCloudIM
+  - JGProgressHUD
+  - Kingfisher
+  - LeanCloud
+  - LeanCloudFeedback
+  - RongCloudIMKit
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AVOSCloud: cc9b567da2d30f07e3da1e4db682cad9ff56a1b6
+  AVOSCloudCrashReporting: 3caf6fedffb29fe4b1430780cda582cadac221c4
+  AVOSCloudIM: 7c30a50d1e8f6afee000a2037ea24eb6abcbc8db
+  JGProgressHUD: 1617b0940cf80bb53e8f7d6f0fd69252ea45d6d4
+  Kingfisher: 64ef28c6d3d6f344e3ae2d7f5c9da80439505d99
+  LeanCloud: 4b3d788f5be7e356331326bc4f8752e28d076e48
+  LeanCloudFeedback: 686305ea196931c7eae49800c384e42d78408482
+  RongCloudIMKit: bc83889f5b7fbb82c104d778ca6633b3681e81d5
+
+PODFILE CHECKSUM: 8b5a3d783e442b507dfbf04163ffb2351d3b9532
+
+COCOAPODS: 1.0.1
