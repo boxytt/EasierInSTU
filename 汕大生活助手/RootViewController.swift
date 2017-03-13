@@ -141,7 +141,7 @@ class RootViewController: DLHamburguerViewController {
         let Timestamp = String(format: "%.0f",NSDate().timeIntervalSince1970)
 
         let Nonce: String = String(arc4random())
-        let appSec = "kommELdadmw"
+        let appSec = "JWtAvN6ez6cXq"
 
         let manage = AFHTTPRequestOperationManager()
 
@@ -154,7 +154,7 @@ class RootViewController: DLHamburguerViewController {
 
         request.httpMethod = "POST"
 
-        manage.requestSerializer.setValue("y745wfm8yu1xv", forHTTPHeaderField: "App-Key")
+        manage.requestSerializer.setValue("p5tvi9dspjhg4", forHTTPHeaderField: "App-Key")
         manage.requestSerializer.setValue(Nonce, forHTTPHeaderField: "Nonce")
 
         manage.requestSerializer.setValue(Timestamp, forHTTPHeaderField: "Timestamp")

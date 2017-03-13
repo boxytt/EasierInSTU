@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource, R
         AVOSCloud.setAllLogsEnabled(false)
         
         // 初始化RongIMKit
-        RCIM.shared().initWithAppKey("y745wfm8yu1xv")  // 开发环境的AppKey，发布时需要修改
+        RCIM.shared().initWithAppKey("p5tvi9dspjhg4")
         RCIM.shared().globalConversationAvatarStyle = .USER_AVATAR_CYCLE
         
         // RCIMUserInfoDataSource
