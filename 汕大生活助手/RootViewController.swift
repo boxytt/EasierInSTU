@@ -94,8 +94,22 @@ class RootViewController: DLHamburguerViewController {
                         // 有token了
                         print("已有token")
                         print(token)
+                        
+                        if token == "" {
+                            if let str = todo.get("image")?.jsonString {
+                                let urls = getUrls(str)
+                                portraitUri = urls[0]
+                            } else {
+                                portraitUri = "http://ac-56d0xu1v.clouddn.com/a1a80f5d4c67764ccb0d.png" // defaultPortrait.png
+                            }
+                            // 获取Token
+                            self.getToken(username: username, userId: userId, portraitUri: portraitUri!)
+                            
+                        } else {
+                            self.connectWithToken(token: token)
 
-                        self.connectWithToken(token: token)
+                        }
+ 
 
                         
 
@@ -192,6 +206,10 @@ class RootViewController: DLHamburguerViewController {
     func connectWithToken(token: String) {
         
         RCIM.shared().connect(withToken: token, success: { (_) -> Void in
+            
+            DispatchQueue.main.sync {
+                print("成功")
+            }
             
 
             
