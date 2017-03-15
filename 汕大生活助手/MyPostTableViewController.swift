@@ -835,7 +835,7 @@ class MyPostTableViewController: UITableViewController, UITextFieldDelegate {
             
             _ = alert.addButton("确认") {
                 print("Text value: \(txt.text)")
-                let objectId = self.objectId[indexPath.row]
+                let objectId = self.objectId[indexPath.section]
                 
                 let todo = LCObject(className: "Carpool", objectId: objectId)
                 
@@ -897,18 +897,24 @@ class MyPostTableViewController: UITableViewController, UITextFieldDelegate {
         let delete = UITableViewRowAction(style: .normal, title: "删除") { action, index in
             
             
-            let todo = LCObject(className: self.className[indexPath.row], objectId: self.objectId[indexPath.row])
+            let todo = LCObject(className: self.className[indexPath.section], objectId: self.objectId[indexPath.section])
             
             todo.delete { result in
                 switch result {
                 case .success:
-                    self.type.remove(at: indexPath.row)
-                    self.content.remove(at: indexPath.row)
-                    self.createdAt.remove(at: indexPath.row)
-                    self.className.remove(at: indexPath.row)
-                    self.objectId.remove(at: indexPath.row)
-                    tableView.deleteRows(at: [indexPath as IndexPath], with: .automatic)
+                    print("#1")
+                    self.type.remove(at: indexPath.section)
+                    self.content.remove(at: indexPath.section)
+                    self.createdAt.remove(at: indexPath.section)
+                    self.className.remove(at: indexPath.section)
+                    self.objectId.remove(at: indexPath.section)
+                    print("#2")
+
+                    tableView.deleteSections([indexPath.section], with: .automatic)
                     
+//                    tableView.deleteRows(at: [indexPath as IndexPath], with: .automatic)
+                    print("#3")
+
                     // 发送通知
                     let center = NotificationCenter.default
                     center.post(name: NSNotification.Name(rawValue: "passValue_delete_myPost"), object: nil)
